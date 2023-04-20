@@ -1,3 +1,5 @@
+CTRL+J para abrir Bash
+
 
 JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta
 $ touch index.html
