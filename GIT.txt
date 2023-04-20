@@ -1,0 +1,363 @@
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta
+$ touch index.html
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta
+$ mkdir assets assets/css assets/js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta
+$ touch assets/css/style.css assets/js/script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta
+$ git init
+Initialized empty Git repository in C:/Users/JavierCastillo-PC/Desktop/Nueva carpeta/.git/
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git add .
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   assets/css/style.css
+        new file:   assets/js/script.js
+        new file:   index.html
+
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git commit -m "First Commit"
+[master (root-commit) 3eceff0] First Commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 assets/css/style.css
+ create mode 100644 assets/js/script.js
+ create mode 100644 index.html
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git log
+commit 3eceff0739d5504f3e9c125e64f331e3780ad7f0 (HEAD -> master)
+Author: JaviCastillo <jav.castonatt@gmail.com>
+Date:   Wed Apr 19 19:37:09 2023 -0400
+
+    First Commit
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git branch Ranma2
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git brancg
+git: 'brancg' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git branch
+  Ranma2
+* master
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git checkout Ranma2
+Switched to branch 'Ranma2'
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git status
+On branch Ranma2
+nothing to commit, working tree clean
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git log
+commit 3eceff0739d5504f3e9c125e64f331e3780ad7f0 (HEAD -> Ranma2, master)
+Author: JaviCastillo <jav.castonatt@gmail.com>
+Date:   Wed Apr 19 19:37:09 2023 -0400
+
+    First Commit
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git branch
+* Ranma2
+  master
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git checkout master
+Switched to branch 'master'
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ ls -R
+.:
+assets/  index.html
+
+./assets:
+css/  js/
+
+./assets/css:
+style.css
+
+./assets/js:
+script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git checkout Ranma2
+Switched to branch 'Ranma2'
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ ls -R
+.:
+assets/  index.html
+
+./assets:
+css/  js/
+
+./assets/css:
+style.css
+
+./assets/js:
+script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ cd asstets/
+bash: cd: asstets/: No such file or directory
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ cd assets
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta/assets (Ranma2)
+$ mkdir img
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta/assets (Ranma2)
+$ ls
+css/  img/  js/
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta/assets (Ranma2)
+$ cdd /
+bash: cdd: command not found
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta/assets (Ranma2)
+$ cd ..
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git add .
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git status
+On branch Ranma2
+nothing to commit, working tree clean
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git commit -m 'se crea carpeta img'
+On branch Ranma2
+nothing to commit, working tree clean
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git status
+On branch Ranma2
+nothing to commit, working tree clean
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ ls -R
+.:
+assets/  index.html
+
+./assets:
+css/  img/  js/
+
+./assets/css:
+style.css
+
+./assets/img:
+
+./assets/js:
+script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git checkout master
+Switched to branch 'master'
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ ls -R
+.:
+assets/  index.html
+
+./assets:
+css/  img/  js/
+
+./assets/css:
+style.css
+
+./assets/img:
+
+./assets/js:
+script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git checkout Ranma2
+Switched to branch 'Ranma2'
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git branch
+* Ranma2
+  master
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ ls -R
+.:
+assets/  index.html
+
+./assets:
+css/  img/  js/
+
+./assets/css:
+style.css
+
+./assets/img:
+
+./assets/js:
+script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ ls
+assets/  index.html
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git checkout master
+Switched to branch 'master'
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ rm assets/img
+rm: cannot remove 'assets/img': Is a directory
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ rmdir assets/img
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ ls -R
+.:
+assets/  index.html
+
+./assets:
+css/  js/
+
+./assets/css:
+style.css
+
+./assets/js:
+script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git add .
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git commit 'img borrada'
+error: pathspec 'img borrada' did not match any file(s) known to git
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git commit -m 'img borrada'
+On branch master
+nothing to commit, working tree clean
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ ls -R
+.:
+assets/  index.html
+
+./assets:
+css/  js/
+
+./assets/css:
+style.css
+
+./assets/js:
+script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git checkout Ranma2
+Switched to branch 'Ranma2'
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ ls -R
+.:
+assets/  index.html
+
+./assets:
+css/  js/
+
+./assets/css:
+style.css
+
+./assets/js:
+script.js
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git log
+commit 3eceff0739d5504f3e9c125e64f331e3780ad7f0 (HEAD -> Ranma2, master)
+Author: JaviCastillo <jav.castonatt@gmail.com>
+Date:   Wed Apr 19 19:37:09 2023 -0400
+
+    First Commit
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (Ranma2)
+$ git checkout master
+Switched to branch 'master'
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git commit -a
+[master 73dff9e] Insertada la estructura html en documento
+ 1 file changed, 12 insertions(+)
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ git log
+commit 73dff9e75b7ec83b376bdf6be6fd941883d7d050 (HEAD -> master)
+Author: JaviCastillo <jav.castonatt@gmail.com>
+<html lang="en">
+Date:   Wed Apr 19 20:51:38 2023 -0400
+
+    Insertada la estructura html en documento
+
+commit 3eceff0739d5504f3e9c125e64f331e3780ad7f0 (Ranma2)
+Author: JaviCastillo <jav.castonatt@gmail.com>
+Date:   Wed Apr 19 19:37:09 2023 -0400
+
+    First Commit
+
+JavierCastillo-PC@LAPTOP-GES09QIF MINGW64 ~/Desktop/Nueva carpeta (master)
+$ vim index.html
+
+i insertar
+
+esc + :wq   --- Confirmar y salir
